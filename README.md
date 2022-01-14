@@ -14,6 +14,9 @@ Follow the steps below to generate your own curated list of target companies.
 4. The resulting string is a list of comma-separated values.
 <br>
 
+![how to do it](/images/how-to.png)
+<br>
+
 1. Copy/paste the resulting string into a spreadsheet cell.
 2. Split the cell data into column headers.
 3. Copy/paste transposed the column headers into a single column.
