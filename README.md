@@ -42,7 +42,7 @@ Follow the steps below to generate your own curated list of target companies.
 3. In top nav bar, click on *Jobs*.
 4. Now scroll to the bottom of this page until it no longer dynamically loads job postings. You know you're there when you see the blue *See more jobs* hyperlink.
 
-![See more jobs button](/images/linkedin_see_more_jobs.png)
+![See more jobs button](/images/linkedin_see_more_jobs.PNG)
 
 5. Open developer console.
    * On windows and Google Chrome: press F12, then select the Console tab.
@@ -59,7 +59,7 @@ Follow the steps below to generate your own curated list of target companies.
 2. You may have to first create an account by giving them your first unborn child.
 3. Search for *software engineer*. Your choice to narrow down by location or not.
 4. In result page, scroll down until you see the blue *See All Companies >* hyperlink.
-![See all companies hyperlink](/images/glassdoor_see_all_companies.png)
+![See all companies hyperlink](/images/glassdoor_see_all_companies.PNG)
 5. Filter the companies to your heart's content. I recommend a rating of four stars or higher.
    * Note that the results are paginated, with 10 companies per page.
 6. For as many pages as you'd like, paste the following code in the terminal:
