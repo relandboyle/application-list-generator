@@ -5,8 +5,7 @@
 Some of the biggest hurdles in the job search can be eliminated by generating a pre-vetted list of companies. Think of this as a To-Do list for job applications. Eliminate the indecision and the cognitive load of deciding where to apply next.
 <br>
 
-Follow the steps below to generate your own curated list of target companies.
-<br>
+### Follow the steps below to generate your own curated list of target companies.
 
 1. Visit one of your favorite sites for searching company profiles and open positions.
 2. Open your browser's developer console.
@@ -16,6 +15,8 @@ Follow the steps below to generate your own curated list of target companies.
 
 ![how to do it](/images/how-to.png)
 <br>
+
+### Follow these steps to get your personal list into a column in Google Sheets.
 
 1. Copy/paste the resulting string into a spreadsheet cell.
 2. Split the cell data into column headers.
