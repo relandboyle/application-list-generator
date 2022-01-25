@@ -13,7 +13,7 @@ Some of the biggest hurdles in the job search can be eliminated by generating a 
 4. The resulting string is a list of comma-separated values.
 <br>
 
-![how to do it](/images/how-to.png)
+![how to do it](/images/how-to-two.png)
 <br>
 
 ### Follow these steps to get your personal list into a column in Google Sheets.
