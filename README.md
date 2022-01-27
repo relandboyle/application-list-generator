@@ -13,11 +13,6 @@ Some of the biggest hurdles in the job search can be eliminated by generating a 
 4. The resulting string is a list of comma-separated values.
 <br>
 
-<p align="center">
-    <img src="https://github.com/relandboyle/application-list-generator/blob/56d99dc732c6a46cd2ba1c89d6e320aad688b388/images/visible-styled.png" alt="Ho to do it" width="80%" />
-</p>
-<br>
-
 ### Follow these steps to get your personalized list into a column in Google Sheets.
 
 1. Copy/Paste the resulting string into a spreadsheet cell.
@@ -26,6 +21,11 @@ Some of the biggest hurdles in the job search can be eliminated by generating a 
 <br>
 
 ## KeyValues.com
+
+<p align="center">
+    <img src="https://github.com/relandboyle/application-list-generator/blob/56d99dc732c6a46cd2ba1c89d6e320aad688b388/images/visible-styled.png" alt="Ho to do it" width="80%" />
+</p>
+<br>
 
 1. Visit [keyvalues.com](https://www.keyvalues.com/).
 2. Select all of the values that are important to you in an employer.
@@ -57,7 +57,7 @@ console.log([...new Set([...document.querySelectorAll('.job-card-container__comp
 <br>
 
 ## GlassDoor.com
-1. Visit [glassdoor.com](https://www.glassdoor.com/Explore/browse-companies.htm).
+1. Visit this exact URL to "browse companies": [glassdoor.com](https://www.glassdoor.com/Explore/browse-companies.htm).
 2. Create a free account if you have not done so.
 3. Search for *software engineer*. Consider filtering and sorting by location and star rating.
 4. On the results page, scroll down until you see the blue *See All Companies >* hyperlink.
