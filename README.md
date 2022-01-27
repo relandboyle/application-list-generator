@@ -9,70 +9,73 @@ Some of the biggest hurdles in the job search can be eliminated by generating a 
 
 1. Visit one of your favorite sites for searching company profiles and open positions.
 2. Open your browser's developer console.
-3. Copy/paste and run the appropriate script into the console.
+3. Copy/paste the appropriate script into the console.
 4. The resulting string is a list of comma-separated values.
 <br>
 
-![how to do it](/images/how-to-two.png)
+<p align="center">
+    <img src="https://github.com/relandboyle/application-list-generator/blob/56d99dc732c6a46cd2ba1c89d6e320aad688b388/images/visible-styled.png" alt="Ho to do it" width="80%" />
+</p>
 <br>
 
-### Follow these steps to get your personal list into a column in Google Sheets.
+### Follow these steps to get your personalized list into a column in Google Sheets.
 
-1. Copy/paste the resulting string into a spreadsheet cell.
+1. Copy/Paste the resulting string into a spreadsheet cell.
 2. Split the cell data into column headers.
-3. Copy/paste transposed the column headers into a single column.
+3. Copy and Paste-Special/Transposed the column headers into a single column.
 <br>
 
 ## KeyValues.com
 
 1. Visit [keyvalues.com](https://www.keyvalues.com/).
-2. Select all features that are important for you in a company. There should be a grid of companies matching your criterions below the selection box.
-3. Open developer console.
-   * On windows and Google Chrome: press F12, then select the Console tab.
-4. Paste the following code in the terminal:
+2. Select all of the values that are important to you in an employer.
+3. Open your browser's developer console.
+4. Copy/Paste the following code into the console:
 > ```
 > console.log([...document.querySelectorAll('.thumbnail-link .thumbnail-company')].reduce((csv, company) => csv.concat(company.innerText, ','), ''));
 > ```
-5. Copy the returned string somewhere safe.
-6. ????
-7. [Profit](https://www.youtube.com/watch?v=a5ih_TQWqCA)
+5. Copy/Paste the returned string to your application tracker.
 
 ## LinkedIn.com
 1. Visit [linkedin.com](https://www.linkedin.com/).
-2. Login.
-3. In top nav bar, click on *Jobs*.
-4. Now scroll to the bottom of this page until it no longer dynamically loads job postings. You know you're there when you see the blue *See more jobs* hyperlink.
+2. Create a free account if you have not done so.
+3. In the top nav bar, click on *Jobs*.
+4. Scroll to the bottom of this page until it no longer dynamically loads job postings. You know you're there when you see the blue *See more jobs* hyperlink.
 
-![See more jobs button](/images/linkedin_see_more_jobs.PNG)
+<p align="center">
+  <img src="https://github.com/relandboyle/application-list-generator/blob/4aa15980c07e66c507caf54b728f0c09db8747c1/images/see-more-linkedin.png" alt="see more linked in" width="50%">
+</p>
+<br>
 
-5. Open developer console.
-   * On windows and Google Chrome: press F12, then select the Console tab.
+5. Open your browser's developer console.
 6. Paste the following code in the terminal:
 > ```
 > console.log([...new Set([...document.querySelectorAll('.job-card-container__company-name')]. slice(4).map(nameDiv => nameDiv.innerText)).values()].join(','));
 > ```
-7. Copy the returned string somewhere safe.
-8. ????
-9. [Profit](https://www.youtube.com/watch?v=a5ih_TQWqCA)
+7. Copy/Paste the returned string to your application tracker.
+
 
 ## GlassDoor.com
 1. Visit [glassdoor.com](https://www.glassdoor.com/).
-2. You may have to first create an account by giving them your first unborn child.
-3. Search for *software engineer*. Your choice to narrow down by location or not.
-4. In result page, scroll down until you see the blue *See All Companies >* hyperlink.
-![See all companies hyperlink](/images/glassdoor_see_all_companies.PNG)
-5. Filter the companies to your heart's content. I recommend a rating of four stars or higher.
-   * Note that the results are paginated, with 10 companies per page.
-6. For as many pages as you'd like, paste the following code in the terminal:
+2. Create a free account if you have not done so.
+3. Search for *software engineer*. Consider filtering and sorting by location and star rating.
+4. On the results page, scroll down until you see the blue *See All Companies >* hyperlink.
+
+<p align="center">
+  <img src="https://github.com/relandboyle/application-list-generator/blob/4aa15980c07e66c507caf54b728f0c09db8747c1/images/see-more-glassdoor.png" alt="see more glass door" width="50%">
+</p>
+<br>
+
+> Note: the results are paginated, with 10 companies per page.
+6. For each page, paste the following code in the developer console:
 > ```
 > console.log([...document.querySelectorAll('h2[data-test="employer-short-name"]')].map(elem => elem.innerText).filter((_, i) => {
 >    const openJobs = parseInt(document.querySelectorAll('h3[data-test="cell-Jobs-count"]')[i].innerText);
 >    return !isNaN(openJobs);
 > }).join(','));
 > ```
-7. Copy the returned string somewhere safe. Either return to step 6 or continue.
-8. ????
-9. [Profit](https://www.youtube.com/watch?v=a5ih_TQWqCA)
+7. Copy/Paste the returned string to your application tracker.
+8. Repeat steps 6 and 7 to pull info from multiple pages of results.
 
 ### Recommended:
 > Select all of the company names and randomize the range in your application tracker document.
