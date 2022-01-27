@@ -70,10 +70,9 @@ console.log([...new Set([...document.querySelectorAll('.job-card-container__comp
 > Note: the results are paginated, with 10 companies per page.
 6. For each page, Copy/Paste the following code into the console:
 ```
-console.log([...document.querySelectorAll('h2[data-test="employer-short-name"]')].map(elem => elem.innerText).filter((_, i) => {
-   const openJobs = parseInt(document.querySelectorAll('h3[data-test="cell-Jobs-count"]')[i].innerText);
-   return !isNaN(openJobs);
-}).join(','));
+console.log([...document.querySelectorAll('h2')].slice(1).reduce((csv, company) => {
+    return csv.concat(company.innerText, ',');
+}, ''));
 ```
 7. Copy/Paste the returned string to your application tracker.
 8. Repeat steps 6 and 7 to pull info from multiple pages of results.
