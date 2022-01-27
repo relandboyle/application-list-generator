@@ -31,10 +31,11 @@ Some of the biggest hurdles in the job search can be eliminated by generating a 
 2. Select all of the values that are important to you in an employer.
 3. Open your browser's developer console.
 4. Copy/Paste the following code into the console:
-> ```
-> console.log([...document.querySelectorAll('.thumbnail-link .thumbnail-company')].reduce((csv, company) => csv.concat(company.innerText, ','), ''));
-> ```
+```
+console.log([...document.querySelectorAll('.thumbnail-link .thumbnail-company')].reduce((csv, company) => csv.concat(company.innerText, ','), ''));
+```
 5. Copy/Paste the returned string to your application tracker.
+<br>
 
 ## LinkedIn.com
 1. Visit [linkedin.com](https://www.linkedin.com/).
@@ -49,11 +50,11 @@ Some of the biggest hurdles in the job search can be eliminated by generating a 
 
 5. Open your browser's developer console.
 6. Copy/Paste the following code into the console:
-> ```
-> console.log([...new Set([...document.querySelectorAll('.job-card-container__company-name')]. slice(4).map(nameDiv => nameDiv.innerText)).values()].join(','));
-> ```
+```
+console.log([...new Set([...document.querySelectorAll('.job-card-container__company-name')]. slice(4).map(nameDiv => nameDiv.innerText)).values()].join(','));
+```
 7. Copy/Paste the returned string to your application tracker.
-
+<br>
 
 ## GlassDoor.com
 1. Visit [glassdoor.com](https://www.glassdoor.com/).
@@ -68,15 +69,17 @@ Some of the biggest hurdles in the job search can be eliminated by generating a 
 
 > Note: the results are paginated, with 10 companies per page.
 6. For each page, Copy/Paste the following code into the console:
-> ```
-> console.log([...document.querySelectorAll('h2[data-test="employer-short-name"]')].map(elem => elem.innerText).filter((_, i) => {
->    const openJobs = parseInt(document.querySelectorAll('h3[data-test="cell-Jobs-count"]')[i].innerText);
->    return !isNaN(openJobs);
-> }).join(','));
-> ```
+```
+console.log([...document.querySelectorAll('h2[data-test="employer-short-name"]')].map(elem => elem.innerText).filter((_, i) => {
+   const openJobs = parseInt(document.querySelectorAll('h3[data-test="cell-Jobs-count"]')[i].innerText);
+   return !isNaN(openJobs);
+}).join(','));
+```
 7. Copy/Paste the returned string to your application tracker.
 8. Repeat steps 6 and 7 to pull info from multiple pages of results.
+<br>
 
 ### Recommended:
 > Select all of the company names and randomize the range in your application tracker document.
 > Always apply to the next company on your list. Don't waste any energy making that decision.
+<br>
