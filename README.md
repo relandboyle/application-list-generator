@@ -9,7 +9,7 @@ Some of the biggest hurdles in the job search can be eliminated by generating a 
 
 1. Visit one of your favorite sites for searching company profiles and open positions.
 2. Open your browser's developer console.
-3. Copy/paste the appropriate script into the console.
+3. Copy/Paste the appropriate script into the console.
 4. The resulting string is a list of comma-separated values.
 <br>
 
