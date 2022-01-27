@@ -48,7 +48,7 @@ Some of the biggest hurdles in the job search can be eliminated by generating a 
 <br>
 
 5. Open your browser's developer console.
-6. Paste the following code in the terminal:
+6. Copy/Paste the following code into the console:
 > ```
 > console.log([...new Set([...document.querySelectorAll('.job-card-container__company-name')]. slice(4).map(nameDiv => nameDiv.innerText)).values()].join(','));
 > ```
@@ -67,7 +67,7 @@ Some of the biggest hurdles in the job search can be eliminated by generating a 
 <br>
 
 > Note: the results are paginated, with 10 companies per page.
-6. For each page, paste the following code in the developer console:
+6. For each page, Copy/Paste the following code into the console:
 > ```
 > console.log([...document.querySelectorAll('h2[data-test="employer-short-name"]')].map(elem => elem.innerText).filter((_, i) => {
 >    const openJobs = parseInt(document.querySelectorAll('h3[data-test="cell-Jobs-count"]')[i].innerText);
