@@ -57,7 +57,7 @@ console.log([...new Set([...document.querySelectorAll('.job-card-container__comp
 <br>
 
 ## GlassDoor.com
-1. Visit [glassdoor.com](https://www.glassdoor.com/).
+1. Visit [glassdoor.com](https://www.glassdoor.com/Explore/browse-companies.htm).
 2. Create a free account if you have not done so.
 3. Search for *software engineer*. Consider filtering and sorting by location and star rating.
 4. On the results page, scroll down until you see the blue *See All Companies >* hyperlink.
