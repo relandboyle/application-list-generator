@@ -25,3 +25,10 @@ console.log([...document.querySelectorAll('h2[data-test="employer-short-name"]')
 console.log([...document.querySelectorAll('.thumbnail-link .thumbnail-company')].reduce((csv, company) => {
     return csv.concat(company.innerText, ',');
 }, ''));
+
+
+
+/**
+    https://blog.wealthfront.com/career-launching-companies-list/
+ */﻿
+console.log([... document.getElementsByClassName('company_name')].map(div => div.outerText).join(','))

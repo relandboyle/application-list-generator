@@ -78,6 +78,15 @@ console.log([...document.querySelectorAll('h2')].slice(1).reduce((csv, company) 
 8. Repeat steps 6 and 7 to pull info from multiple pages of results.
 <br>
 
+## Wealthfront Career-Launching Companies
+1. Visit [Wealthfront's career-launching companies list](https://blog.wealthfront.com/career-launching-companies-list/).
+2. Copy/Paste the following code into the console:
+```
+console.log([... document.getElementsByClassName('company_name')].map(div => div.outerText).join(','))
+```
+3. Copy/Paste the returned string to your application tracker.
+<br>
+
 ### Recommended:
 > Select all of the company names and randomize the range in your application tracker document.
 > Always apply to the next company on your list. Don't waste any energy making that decision.
