@@ -3,9 +3,16 @@
 ## A series of scripts to generate lists of top companies to target in the job hunt.
 
 Some of the biggest hurdles in the job search can be eliminated by generating a pre-vetted list of companies. Think of this as a To-Do list for job applications. Eliminate the indecision and the cognitive load of deciding where to apply next.
-<br>
+<br><br>
 
-### Follow the steps below to generate your own curated list of target companies.
+## Contents
+- [KeyValues.com](#keyvaluescom)
+- [LinkedIn.com](#linkedincom)
+- [GlassDoor.com](#glassdoorcom)
+- [Wealthfront.com](#wealthfront-career-launching-companies)
+<br><br>
+
+#### Follow the steps below to generate your own curated list of target companies.
 
 1. Visit one of your favorite sites for searching company profiles and open positions.
 2. Open your browser's developer console.
@@ -13,14 +20,14 @@ Some of the biggest hurdles in the job search can be eliminated by generating a 
 4. The resulting string is a list of comma-separated values.
 <br>
 
-### Follow these steps to get your personalized list into a column in Google Sheets.
+#### Follow these steps to get your personalized list into a column in Google Sheets.
 
 1. Copy/Paste the resulting string into a spreadsheet cell.
 2. Split the cell data into column headers.
 3. Copy and Paste-Special/Transposed the column headers into a single column.
 <br>
 
-## KeyValues.com
+## <br>KeyValues.com
 
 <p align="center">
     <img src="https://github.com/relandboyle/application-list-generator/blob/56d99dc732c6a46cd2ba1c89d6e320aad688b388/images/visible-styled.png" alt="Ho to do it" width="80%" />
@@ -37,7 +44,7 @@ console.log([...document.querySelectorAll('.thumbnail-link .thumbnail-company')]
 5. Copy/Paste the returned string to your application tracker.
 <br>
 
-## LinkedIn.com
+## <br>LinkedIn.com
 1. Visit [linkedin.com](https://www.linkedin.com/).
 2. Create a free account if you have not done so.
 3. In the top nav bar, click on *Jobs*.
@@ -56,7 +63,7 @@ console.log([...new Set([...document.querySelectorAll('.job-card-container__comp
 7. Copy/Paste the returned string to your application tracker.
 <br>
 
-## GlassDoor.com
+## <br>GlassDoor.com
 1. Visit this exact URL to "browse companies": [glassdoor.com](https://www.glassdoor.com/Explore/browse-companies.htm).
 2. Create a free account if you have not done so.
 3. Search for *software engineer*. Consider filtering and sorting by location and star rating.
@@ -78,17 +85,19 @@ console.log([...document.querySelectorAll('h2')].slice(1).reduce((csv, company) 
 8. Repeat steps 6 and 7 to pull info from multiple pages of results.
 <br>
 
-## Wealthfront Career-Launching Companies
+## <br>Wealthfront Career-Launching Companies
 1. Visit [Wealthfront's career-launching companies list](https://blog.wealthfront.com/career-launching-companies-list/).
+
+<p align="center">
+  <img src="https://blog.wealthfront.com/wp-content/themes/wealthfront-chisel/career-launching-companies/map_2021.png" alt="see more wealthfront" width="50%">
+</p>
+<br>
+
 2. Copy/Paste the following code into the console:
 ```
 console.log([... document.getElementsByClassName('company_name')].map(div => div.outerText).join(','))
 ```
 3. Copy/Paste the returned string to your application tracker.
-
-<p align="center">
-  <img src="https://blog.wealthfront.com/wp-content/themes/wealthfront-chisel/career-launching-companies/map_2021.png" alt="see more wealthfront" width="50%">
-</p>
 <br>
 
 ### Recommended:
