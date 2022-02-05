@@ -105,3 +105,6 @@ console.log([... document.getElementsByClassName('company_name')].map(div => div
 3. Copy/Paste the returned string to your application tracker.
 <br>
 <br>
+<br>
+<br>
+<br>
