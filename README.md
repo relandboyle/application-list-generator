@@ -5,7 +5,7 @@
 Some of the biggest hurdles in the job search can be eliminated by generating a pre-vetted list of companies. Think of this as a To-Do list for job applications. Eliminate the indecision and the cognitive load of deciding where to apply next.
 <br><br>
 
-## Contents
+### Contents
 - [KeyValues.com](#keyvaluescom)
 - [LinkedIn.com](#linkedincom)
 - [GlassDoor.com](#glassdoorcom)
