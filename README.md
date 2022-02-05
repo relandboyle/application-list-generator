@@ -85,6 +85,10 @@ console.log([...document.querySelectorAll('h2')].slice(1).reduce((csv, company) 
 console.log([... document.getElementsByClassName('company_name')].map(div => div.outerText).join(','))
 ```
 3. Copy/Paste the returned string to your application tracker.
+
+<p align="center">
+  <img src="https://blog.wealthfront.com/wp-content/themes/wealthfront-chisel/career-launching-companies/map_2021.png" alt="see more wealthfront" width="50%">
+</p>
 <br>
 
 ### Recommended:
