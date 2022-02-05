@@ -12,7 +12,7 @@ Some of the biggest hurdles in the job search can be eliminated by generating a 
 - [Wealthfront.com](#wealthfront-career-launching-companies)
 <br><br>
 
-#### Follow the steps below to generate your own curated list of target companies.
+### Follow the steps below to generate your own curated list of target companies.
 
 1. Visit one of your favorite sites for searching company profiles and open positions.
 2. Open your browser's developer console.
@@ -20,11 +20,16 @@ Some of the biggest hurdles in the job search can be eliminated by generating a 
 4. The resulting string is a list of comma-separated values.
 <br>
 
-#### Follow these steps to get your personalized list into a column in Google Sheets.
+### Follow these steps to get your personalized list into a column in Google Sheets.
 
 1. Copy/Paste the resulting string into a spreadsheet cell.
 2. Split the cell data into column headers.
 3. Copy and Paste-Special/Transposed the column headers into a single column.
+<br>
+
+#### Recommended:
+> Select all of the company names and randomize the range in your application tracker document.
+> Always apply to the next company on your list. Don't waste any energy making that decision!
 <br>
 
 ## <br>KeyValues.com
@@ -99,8 +104,4 @@ console.log([... document.getElementsByClassName('company_name')].map(div => div
 ```
 3. Copy/Paste the returned string to your application tracker.
 <br>
-
-### Recommended:
-> Select all of the company names and randomize the range in your application tracker document.
-> Always apply to the next company on your list. Don't waste any energy making that decision.
 <br>
