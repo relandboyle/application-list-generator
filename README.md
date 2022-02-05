@@ -82,7 +82,7 @@ console.log([...document.querySelectorAll('h2')].slice(1).reduce((csv, company) 
 1. Visit [Wealthfront's career-launching companies list](https://blog.wealthfront.com/career-launching-companies-list/).
 2. Copy/Paste the following code into the console:
 ```
-console.log([... document.getElementsByClassName('company_name')].map(div => div.outerText).join(','))
+console.log([... document.getElementsByClassName('company_name')].map(div => div.innerText).join(','))
 ```
 3. Copy/Paste the returned string to your application tracker.
 <br>

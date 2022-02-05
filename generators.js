@@ -27,8 +27,7 @@ console.log([...document.querySelectorAll('.thumbnail-link .thumbnail-company')]
 }, ''));
 
 
-
 /**
     https://blog.wealthfront.com/career-launching-companies-list/
  */﻿
-console.log([... document.getElementsByClassName('company_name')].map(div => div.outerText).join(','))
+console.log([... document.getElementsByClassName('company_name')].map(div => div.innerText).join(','))
