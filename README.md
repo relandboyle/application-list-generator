@@ -92,13 +92,13 @@ console.log([...document.querySelectorAll('h2')].slice(1).reduce((csv, company) 
 <br>
 
 ## <br>Wealthfront
-1. Visit [Wealthfront's career-launching companies list](https://blog.wealthfront.com/career-launching-companies-list/).
 
 <p align="center">
   <img src="https://blog.wealthfront.com/wp-content/themes/wealthfront-chisel/career-launching-companies/map_2021.png" alt="see more wealthfront" width="50%">
 </p>
 <br>
 
+1. Visit [Wealthfront's career-launching companies list](https://blog.wealthfront.com/career-launching-companies-list/).
 2. Copy/Paste the following code into the console:
 ```
 console.log([... document.getElementsByClassName('company_name')].map(div => div.innerText).join(','))
@@ -107,13 +107,13 @@ console.log([... document.getElementsByClassName('company_name')].map(div => div
 <br>
 
 ## <br>Tech Jobs for Good
-1. Visit [Tech jobs for Good](https://techjobsforgood.com/#q).
 
 <p align="center">
   <img src="https://github.com/relandboyle/application-list-generator/blob/d953accfc972455b5c0f21b28fe6fdc875f27517/images/TJfG.png" alt="see more wealthfront" width="50%">
 </p>
 <br>
 
+1. Visit [Tech jobs for Good](https://techjobsforgood.com/#q).
 2. Copy/Paste the following code into the console:
 ```
 console.log([...document.querySelectorAll('.company_name')].map((name) => name.innerText).join(','));
