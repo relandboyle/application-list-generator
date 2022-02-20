@@ -6,10 +6,11 @@ Some of the biggest hurdles in the job search can be eliminated by generating a 
 <br><br>
 
 ### Contents
-- [KeyValues.com](#keyvaluescom)
-- [LinkedIn.com](#linkedincom)
-- [GlassDoor.com](#glassdoorcom)
-- [Wealthfront.com](#wealthfront-career-launching-companies)
+- [Key Values](#key-values)
+- [LinkedIn](#linkedin)
+- [Glassdoor](#glassdoor)
+- [Wealthfront](#wealthfront)
+- [Tech Jobs for Good](#tech-jobs-for-good)
 <br><br>
 
 ### Follow the steps below to generate your own curated list of target companies.
@@ -32,7 +33,7 @@ Some of the biggest hurdles in the job search can be eliminated by generating a 
 > Always apply to the next company on your list. Don't waste any energy making that decision!
 <br>
 
-## <br>KeyValues.com
+## <br>Key Values
 
 <p align="center">
     <img src="https://github.com/relandboyle/application-list-generator/blob/56d99dc732c6a46cd2ba1c89d6e320aad688b388/images/visible-styled.png" alt="Ho to do it" width="80%" />
@@ -49,7 +50,7 @@ console.log([...document.querySelectorAll('.thumbnail-link .thumbnail-company')]
 5. Copy/Paste the returned string to your application tracker.
 <br>
 
-## <br>LinkedIn.com
+## <br>LinkedIn
 1. Visit [linkedin.com](https://www.linkedin.com/).
 2. Create a free account if you have not done so.
 3. In the top nav bar, click on *Jobs*.
@@ -68,7 +69,7 @@ console.log([...new Set([...document.querySelectorAll('.job-card-container__comp
 7. Copy/Paste the returned string to your application tracker.
 <br>
 
-## <br>GlassDoor.com
+## <br>Glassdoor
 1. Visit this exact URL to "browse companies": [glassdoor.com](https://www.glassdoor.com/Explore/browse-companies.htm).
 2. Create a free account if you have not done so.
 3. Search for *software engineer*. Consider filtering and sorting by location and star rating.
@@ -90,7 +91,7 @@ console.log([...document.querySelectorAll('h2')].slice(1).reduce((csv, company) 
 8. Repeat steps 6 and 7 to pull info from multiple pages of results.
 <br>
 
-## <br>Wealthfront Career-Launching Companies
+## <br>Wealthfront
 1. Visit [Wealthfront's career-launching companies list](https://blog.wealthfront.com/career-launching-companies-list/).
 
 <p align="center">
@@ -103,6 +104,22 @@ console.log([...document.querySelectorAll('h2')].slice(1).reduce((csv, company) 
 console.log([... document.getElementsByClassName('company_name')].map(div => div.innerText).join(','))
 ```
 3. Copy/Paste the returned string to your application tracker.
+<br>
+
+## <br>Tech Jobs for Good
+1. Visit [Tech jobs for Good](https://techjobsforgood.com/#q).
+
+<p align="center">
+  <img src="https://blog.wealthfront.com/wp-content/themes/wealthfront-chisel/career-launching-companies/map_2021.png" alt="see more wealthfront" width="50%">
+</p>
+<br>
+
+2. Copy/Paste the following code into the console:
+```
+console.log([...document.querySelectorAll('.company_name')].map((name) => name.innerText).join(','));
+```
+3. Copy/Paste the returned string to your application tracker.
+
 <br>
 <br>
 <br>
