@@ -110,7 +110,7 @@ console.log([... document.getElementsByClassName('company_name')].map(div => div
 1. Visit [Tech jobs for Good](https://techjobsforgood.com/#q).
 
 <p align="center">
-  <img src="https://blog.wealthfront.com/wp-content/themes/wealthfront-chisel/career-launching-companies/map_2021.png" alt="see more wealthfront" width="50%">
+  <img src="https://github.com/relandboyle/application-list-generator/blob/d953accfc972455b5c0f21b28fe6fdc875f27517/images/TJfG.png" alt="see more wealthfront" width="50%">
 </p>
 <br>
 
