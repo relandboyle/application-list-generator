@@ -11,6 +11,7 @@ Some of the biggest hurdles in the job search can be eliminated by generating a 
 - [Glassdoor](#glassdoor)
 - [Wealthfront](#wealthfront)
 - [Tech Jobs for Good](#tech-jobs-for-good)
+- [Hiring Without Whiteboarding](#hiring-without-whiteboarding)
 <br><br>
 
 ### Follow the steps below to generate your own curated list of target companies.
@@ -124,7 +125,7 @@ console.log([...document.querySelectorAll('.company_name')].map((name) => name.i
 ## <br>Hiring Without Whiteboarding
 
 <p align="center">
-  <img src="https://github.com/relandboyle/application-list-generator/blob/d953accfc972455b5c0f21b28fe6fdc875f27517/images/TJfG.png" alt="see more wealthfront" width="50%">
+  <img src="https://miro.medium.com/max/700/0*weCcEE0HAegQaBcT" alt="whiteboarding" width="50%">
 </p>
 <br>
 
