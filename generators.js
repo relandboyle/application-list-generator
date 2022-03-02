@@ -15,9 +15,7 @@ console.log([...document.querySelectorAll('h2')].slice(1).reduce((csv, company) 
 /**
     keyvalues.com
  */
-console.log([...document.querySelectorAll('.thumbnail-link .thumbnail-company')].reduce((csv, company) => {
-    return csv.concat(company.innerText, ',');
-}, ''));
+console.log([...document.querySelectorAll('.thumbnail-link .thumbnail-company')].reduce((csv, company) => csv.concat(company.innerText, ','), ''));
 
 
 /**
