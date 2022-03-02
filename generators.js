@@ -35,4 +35,4 @@ console.log([...document.querySelectorAll('.company_name')].map((name) => name.i
 /**
     github.com/poteto/hiring-without-whiteboards
  */
-console.log([].concat(...[...document.getElementById('readme').querySelectorAll('ul')].slice(3, 12).map((list, index) => [...list.querySelectorAll('a')].map((item) => item.innerText))).join('|'));
+console.log([].concat(...[...document.getElementById('readme').querySelectorAll('ul')].slice(3, 12).map(list => [...list.querySelectorAll('a')].map(item => item.innerText))).join(','));
