@@ -7,9 +7,7 @@ console.log([...new Set([...document.querySelectorAll('.job-card-container__comp
 /**
     glassdoor.com
  */
-console.log([...document.querySelectorAll('h2')].slice(1).reduce((csv, company) => {
-    return csv.concat(company.innerText, ',');
-}, ''));
+console.log([...document.querySelectorAll('h2')].slice(1).reduce((csv, company) => csv.concat(company.innerText, ','), ''));
 
 
 /**
