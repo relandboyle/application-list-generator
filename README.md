@@ -132,7 +132,7 @@ console.log([...document.querySelectorAll('.company_name')].map((name) => name.i
 1. Visit [Hiring Without Whiteboarding](https://github.com/poteto/hiring-without-whiteboards).
 2. Copy/Paste the following code into the console:
 ```
-console.log([].concat(...[...document.getElementById('readme').querySelectorAll('ul')].slice(3, 12).map((list, index) => [...list.querySelectorAll('a')].map((item) => item.innerText))).join(','));
+console.log([].concat(...[...document.getElementById('readme').querySelectorAll('ul')].slice(3, 12).map(list => [...list.querySelectorAll('a')].map(item => item.innerText))).join(','));
 ```
 3. Copy/Paste the returned string to your application tracker.
 
