@@ -1,4 +1,10 @@
 /**
+    keyvalues.com
+ */
+console.log([...document.querySelectorAll('.thumbnail-link .thumbnail-company')].reduce((csv, company) => csv.concat(company.innerText, ','), ''));
+
+
+/**
     linkedin.com
  */
 console.log([...new Set([...document.querySelectorAll('.job-card-container__company-name')].slice(4).map(nameDiv => nameDiv.innerText)).values()].join(','));
@@ -8,12 +14,6 @@ console.log([...new Set([...document.querySelectorAll('.job-card-container__comp
     glassdoor.com
  */
 console.log([...document.querySelectorAll('h2')].slice(1).reduce((csv, company) => csv.concat(company.innerText, ','), ''));
-
-
-/**
-    keyvalues.com
- */
-console.log([...document.querySelectorAll('.thumbnail-link .thumbnail-company')].reduce((csv, company) => csv.concat(company.innerText, ','), ''));
 
 
 /**
