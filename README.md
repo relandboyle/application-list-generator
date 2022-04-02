@@ -12,6 +12,7 @@ Some of the biggest hurdles in the job search can be eliminated by generating a 
 - [Wealthfront](#wealthfront)
 - [Tech Jobs for Good](#tech-jobs-for-good)
 - [Hiring Without Whiteboarding](#hiring-without-whiteboarding)
+- [4/dayweek](#4dayweek)
 <br><br>
 
 ### Follow the steps below to generate your own curated list of target companies.
@@ -19,7 +20,7 @@ Some of the biggest hurdles in the job search can be eliminated by generating a 
 1. Visit one of your favorite sites for searching company profiles and open positions.
 2. Open your browser's developer console.
 3. Copy/Paste the appropriate script into the console.
-4. The resulting string is a list of comma-separated values.
+4. The resulting string is a bar-separated list of values.
 <br>
 
 ### Follow these steps to get your personalized list into a column in Google Sheets.
@@ -31,7 +32,10 @@ Some of the biggest hurdles in the job search can be eliminated by generating a 
 
 #### Recommended:
 > Select all of the company names and randomize the range in your application tracker document.
-> Always apply to the next company on your list. Don't waste any energy making that decision!
+> <br>
+> Always apply to the next company on your list.
+> <br>
+> Don't waste any energy making that decision!
 <br>
 
 ## <br>Key Values
@@ -133,7 +137,21 @@ console.log([...document.querySelectorAll('.company_name')].map((name) => name.i
 console.log([].concat(...[...document.getElementById('readme').querySelectorAll('ul')].slice(3, 12).map(list => [...list.querySelectorAll('a')].map(item => item.innerText))).join(','));
 ```
 3. Copy/Paste the returned string to your application tracker.
+<br>
 
+## <br>4/dayweek
+
+<p align="center">
+    <img src="https://github.com/relandboyle/application-list-generator/blob/2aed3578dc631f89ac4855ae87c15fd1d6ce79a2/images/4dayweek.PNG" alt="four day week" width="50%">
+</p>
+<br>
+
+1. Visit [4dayweek](https://4dayweek.io/companies)
+2. Copy/Paste the following code into the console:
+```
+console.log([...document.querySelectorAll('.company-tile-title')].reduce((output, company) => output.concat(company.innerText.slice(company.innerText.indexOf('\n') + 1), '|'), ''));
+```
+3. Copy/Paste the returned string to your application tracker.
 <br>
 <br>
 <br>
