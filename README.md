@@ -50,7 +50,7 @@ Some of the biggest hurdles in the job search can be eliminated by generating a 
 3. Open your browser's developer console.
 4. Copy/Paste the following code into the console:
 ```
-console.log([...document.querySelectorAll('.thumbnail-link .thumbnail-company')].reduce((csv, company) => csv.concat(company.innerText, ','), ''));
+console.log([...document.querySelectorAll('.thumbnail-link .thumbnail-company')].reduce((csv, company) => csv.concat(company.innerText, '|'), ''));
 ```
 5. Copy/Paste the returned string to your application tracker.
 <br>
@@ -69,7 +69,7 @@ console.log([...document.querySelectorAll('.thumbnail-link .thumbnail-company')]
 5. Open your browser's developer console.
 6. Copy/Paste the following code into the console:
 ```
-console.log([...new Set([...document.querySelectorAll('.job-card-container__company-name')]. slice(4).map(nameDiv => nameDiv.innerText)).values()].join(','));
+console.log([...new Set([...document.querySelectorAll('.job-card-container__company-name')]. slice(4).map(nameDiv => nameDiv.innerText)).values()].join('|'));
 ```
 7. Copy/Paste the returned string to your application tracker.
 <br>
@@ -88,7 +88,7 @@ console.log([...new Set([...document.querySelectorAll('.job-card-container__comp
 > Note: the results are paginated, with 10 companies per page.
 6. For each page, Copy/Paste the following code into the console:
 ```
-console.log([...document.querySelectorAll('h2')].slice(1).reduce((csv, company) => csv.concat(company.innerText, ','), ''));
+console.log([...document.querySelectorAll('h2')].slice(1).reduce((csv, company) => csv.concat(company.innerText, '|'), ''));
 ```
 7. Copy/Paste the returned string to your application tracker.
 8. Repeat steps 6 and 7 to pull info from multiple pages of results.
@@ -104,7 +104,7 @@ console.log([...document.querySelectorAll('h2')].slice(1).reduce((csv, company) 
 1. Visit [Wealthfront's career-launching companies list](https://blog.wealthfront.com/career-launching-companies-list/).
 2. Copy/Paste the following code into the console:
 ```
-console.log([... document.getElementsByClassName('company_name')].map(div => div.innerText).join(','))
+console.log([... document.getElementsByClassName('company_name')].map(div => div.innerText).join('|'))
 ```
 3. Copy/Paste the returned string to your application tracker.
 <br>
@@ -119,7 +119,7 @@ console.log([... document.getElementsByClassName('company_name')].map(div => div
 1. Visit [Tech jobs for Good](https://techjobsforgood.com/#q).
 2. Copy/Paste the following code into the console:
 ```
-console.log([...document.querySelectorAll('.company_name')].map((name) => name.innerText).join(','));
+console.log([...document.querySelectorAll('.company_name')].map((name) => name.innerText).join('|'));
 ```
 3. Copy/Paste the returned string to your application tracker.
 <br>
@@ -134,7 +134,7 @@ console.log([...document.querySelectorAll('.company_name')].map((name) => name.i
 1. Visit [Hiring Without Whiteboarding](https://github.com/poteto/hiring-without-whiteboards).
 2. Copy/Paste the following code into the console:
 ```
-console.log([].concat(...[...document.getElementById('readme').querySelectorAll('ul')].slice(3, 12).map(list => [...list.querySelectorAll('a')].map(item => item.innerText))).join(','));
+console.log([].concat(...[...document.getElementById('readme').querySelectorAll('ul')].slice(3, 12).map(list => [...list.querySelectorAll('a')].map(item => item.innerText))).join('|'));
 ```
 3. Copy/Paste the returned string to your application tracker.
 <br>
