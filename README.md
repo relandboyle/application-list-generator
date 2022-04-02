@@ -7,12 +7,12 @@ Some of the biggest hurdles in the job search can be eliminated by generating a 
 
 ### Contents
 - [Key Values](#key-values)
-- [LinkedIn](#linkedin)
-- [Glassdoor](#glassdoor)
 - [Wealthfront](#wealthfront)
 - [Tech Jobs for Good](#tech-jobs-for-good)
 - [Hiring Without Whiteboarding](#hiring-without-whiteboarding)
 - [4/dayweek.io](#4dayweek)
+- [LinkedIn](#linkedin)
+- [Glassdoor](#glassdoor)
 <br><br>
 
 ### Follow the steps below to generate your own curated list of target companies.
@@ -53,45 +53,6 @@ Some of the biggest hurdles in the job search can be eliminated by generating a 
 console.log([...document.querySelectorAll('.thumbnail-link .thumbnail-company')].reduce((csv, company) => csv.concat(company.innerText, '|'), ''));
 ```
 5. Copy/Paste the returned string to your application tracker.
-<br>
-
-## <br>LinkedIn
-1. Visit [linkedin.com](https://www.linkedin.com/).
-2. Create a free account if you have not done so.
-3. In the top nav bar, click on *Jobs*.
-4. Scroll to the bottom of this page until it no longer dynamically loads job postings. You know you're there when you see the blue *See more jobs* hyperlink.
-
-<p align="center">
-  <img src="https://github.com/relandboyle/application-list-generator/blob/4aa15980c07e66c507caf54b728f0c09db8747c1/images/see-more-linkedin.png" alt="see more linked in" width="50%">
-</p>
-<br>
-
-5. Open your browser's developer console.
-6. Copy/Paste the following code into the console:
-```
-console.log([...new Set([...document.querySelectorAll('.job-card-container__company-name')]. slice(4).map(nameDiv => nameDiv.innerText)).values()].join('|'));
-```
-7. Copy/Paste the returned string to your application tracker.
-<br>
-
-## <br>Glassdoor
-1. Visit this exact URL to "browse companies": [glassdoor.com](https://www.glassdoor.com/Explore/browse-companies.htm).
-2. Create a free account if you have not done so.
-3. Search for *software engineer*. Consider filtering and sorting by location and star rating.
-4. On the results page, scroll down until you see the blue *See All Companies >* hyperlink.
-
-<p align="center">
-  <img src="https://github.com/relandboyle/application-list-generator/blob/4aa15980c07e66c507caf54b728f0c09db8747c1/images/see-more-glassdoor.png" alt="see more glass door" width="50%">
-</p>
-<br>
-
-> Note: the results are paginated, with 10 companies per page.
-6. For each page, Copy/Paste the following code into the console:
-```
-console.log([...document.querySelectorAll('h2')].slice(1).reduce((csv, company) => csv.concat(company.innerText, '|'), ''));
-```
-7. Copy/Paste the returned string to your application tracker.
-8. Repeat steps 6 and 7 to pull info from multiple pages of results.
 <br>
 
 ## <br>Wealthfront
@@ -152,6 +113,48 @@ console.log([].concat(...[...document.getElementById('readme').querySelectorAll(
 console.log([...document.querySelectorAll('.company-tile-title')].reduce((output, company) => output.concat(company.innerText.slice(company.innerText.indexOf('\n') + 1), '|'), ''));
 ```
 3. Copy/Paste the returned string to your application tracker.
+<br>
+
+## <br>LinkedIn
+
+1. Visit [linkedin.com](https://www.linkedin.com/).
+2. Create a free account if you have not done so.
+3. In the top nav bar, click on *Jobs*.
+4. Scroll to the bottom of this page until it no longer dynamically loads job postings. You know you're there when you see the blue *See more jobs* hyperlink.
+
+<p align="center">
+  <img src="https://github.com/relandboyle/application-list-generator/blob/4aa15980c07e66c507caf54b728f0c09db8747c1/images/see-more-linkedin.png" alt="see more linked in" width="50%">
+</p>
+<br>
+
+5. Open your browser's developer console.
+6. Copy/Paste the following code into the console:
+```
+console.log([...new Set([...document.querySelectorAll('.job-card-container__company-name')]. slice(4).map(nameDiv => nameDiv.innerText)).values()].join('|'));
+```
+7. Copy/Paste the returned string to your application tracker.
+<br>
+
+## <br>Glassdoor
+1. Visit this exact URL to "browse companies": [glassdoor.com](https://www.glassdoor.com/Explore/browse-companies.htm).
+2. Create a free account if you have not done so.
+3. Search for *software engineer*. Consider filtering and sorting by location and star rating.
+4. On the results page, scroll down until you see the blue *See All Companies >* hyperlink.
+
+<p align="center">
+  <img src="https://github.com/relandboyle/application-list-generator/blob/4aa15980c07e66c507caf54b728f0c09db8747c1/images/see-more-glassdoor.png" alt="see more glass door" width="50%">
+</p>
+<br>
+
+> Note: the results are paginated, with 10 companies per page.
+6. For each page, Copy/Paste the following code into the console:
+```
+console.log([...document.querySelectorAll('h2')].slice(1).reduce((csv, company) => csv.concat(company.innerText, '|'), ''));
+```
+7. Copy/Paste the returned string to your application tracker.
+8. Repeat steps 6 and 7 to pull info from multiple pages of results.
+<br>
+
 <br>
 <br>
 <br>
