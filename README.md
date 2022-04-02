@@ -12,7 +12,7 @@ Some of the biggest hurdles in the job search can be eliminated by generating a 
 - [Wealthfront](#wealthfront)
 - [Tech Jobs for Good](#tech-jobs-for-good)
 - [Hiring Without Whiteboarding](#hiring-without-whiteboarding)
-- [4/dayweek](#4dayweek)
+- [4/dayweek.io](#4dayweek)
 <br><br>
 
 ### Follow the steps below to generate your own curated list of target companies.
@@ -146,7 +146,7 @@ console.log([].concat(...[...document.getElementById('readme').querySelectorAll(
 </p>
 <br>
 
-1. Visit [4dayweek](https://4dayweek.io/companies)
+1. Visit [4/dayweek.io](https://4dayweek.io/companies)
 2. Copy/Paste the following code into the console:
 ```
 console.log([...document.querySelectorAll('.company-tile-title')].reduce((output, company) => output.concat(company.innerText.slice(company.innerText.indexOf('\n') + 1), '|'), ''));
