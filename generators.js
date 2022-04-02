@@ -32,3 +32,9 @@ console.log([...document.querySelectorAll('.company_name')].map((name) => name.i
     github.com/poteto/hiring-without-whiteboards
  */
 console.log([].concat(...[...document.getElementById('readme').querySelectorAll('ul')].slice(3, 12).map(list => [...list.querySelectorAll('a')].map(item => item.innerText))).join(','));
+
+
+/**
+    4dayweek.io
+ */
+console.log([...document.querySelectorAll('.company-tile-title')].reduce((output, company) => output.concat(company.innerText.slice(company.innerText.indexOf('\n') + 1), '|'), ''));
