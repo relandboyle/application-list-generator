@@ -2,7 +2,7 @@
 
 ## A series of scripts to generate lists of top companies to target in the job hunt.
 
-Some of the biggest hurdles in the job search can be eliminated by generating a pre-vetted list of companies. Think of this as a To-Do list for job applications. Eliminate the indecision and the cognitive load of deciding where to apply next.
+Some of the biggest hurdles in the job search can be eliminated by generating a pre-vetted list of companies and letting that list guide your application process. Think of this as a To-Do list for job applications. Eliminate the indecision and the cognitive load of deciding where to apply next!
 <br><br>
 
 ### Contents
