@@ -13,6 +13,7 @@ Some of the biggest hurdles in the job search can be eliminated by generating a 
 - [4/dayweek.io](#4dayweek)
 - [LinkedIn](#linkedin)
 - [Glassdoor](#glassdoor)
+- [Web3 Jobs](#web3-jobs)
 <br><br>
 
 ### Follow the steps below to generate your own curated list of target companies.
@@ -159,4 +160,21 @@ console.log([...document.querySelectorAll('h2')].slice(1).reduce((csv, company) 
 <br>
 <br>
 <br>
+<br>
+
+## <br>Web3 Jobs
+<p align="center">
+  <img src="https://web3.career/images/web3-jobs.png" alt="see more glass door" width="50%">
+</p>
+<br>
+
+1. Visit this exact URL to browse companies: [web3.career](https://web3.career/web3-companies).
+2. Open your browser's developer console.
+3. Copy/Paste the following code into the console:
+```
+document.querySelectorAll('h3').forEach(e => console.log(e.innerText));
+```
+4. Copy/Paste the returned string to your application tracker. 
+<br>
+
 <br>
